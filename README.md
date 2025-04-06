@@ -1,4 +1,4 @@
-# transcath_ideas
+# Valve Measuring Ideas
 
 After doing some poking around to see what research and experimentation has already been done, I saw that there had been some parties that had tried working with YOLO series and other object detection models to detect the valve opening and provide a bounding box. While I imagine that it would be possible, a single camera approach might make it difficult to get accurate measurements from just a bounding box considering the variance in distance and camera angle. I also think that there are probably more accurate models that could be used, as great as YOLO is; I have found that DETR models have worked better for me in terms of accuracy in the past. While it might be possible to train a model to directly predict diameter if we had access to sufficient labeled data of premeasured openings, I imagine it would be very difficult to train a model to predict this directly. Therefore, I think that it could be best to pair a ML model with some more traditional computer vision techniques for better feature engineering.
 
